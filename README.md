@@ -165,7 +165,7 @@ project-root/
 📄 License
 MIT License
 
-Copyright (c) 2026 Patel Pritkumar Shaileshbhai
+Copyright (c) 2026 Patel Prit
 
 Free to use, modify, and distribute this software with proper credit to the author.
 
