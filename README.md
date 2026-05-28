@@ -1,44 +1,42 @@
-Indian Language Word Frequency Analyzer
+# Indian Language Word Frequency Analyzer
 
-A Python-based application for analyzing word frequency in Indian languages such as Hindi, Tamil, Gujarati, and Marathi. The system processes Unicode text, applies NLP techniques, and generates meaningful statistical insights.
+## Overview
+
+The Indian Language Word Frequency Analyzer is a Python-based application developed for analyzing textual data in multiple Indian languages, including Hindi, Tamil, Gujarati, and Marathi. The system processes Unicode text inputs, applies natural language processing techniques, and generates statistical insights related to word usage and distribution.
+
+The application is designed to support both command-line and web-based interactions, providing flexibility for different usage environments.
 
 ---
 
- 📌 Overview
+## Features
 
-This project is designed to perform text analysis on Indian language inputs. It processes raw text, removes noise, tokenizes words, and calculates frequency distribution along with useful metrics.
-
-The system supports both:
-
-* Command Line Interface (CLI)
+* Unicode support for multiple Indian language scripts
+* Word frequency analysis and ranking
+* Text preprocessing and stopword removal
+* Lexical statistics and frequency distribution analysis
+* Command Line Interface (CLI) support
 * Web-based interface using Flask
+* Export functionality in JSON and CSV formats
+* Modular and scalable project architecture
 
 ---
 
-🚀 Features
+## Technologies Used
 
-* Unicode support for multiple Indian scripts
-* Word frequency calculation and ranking
-* Stopword removal and text preprocessing
-* Lexical statistics (frequency %, diversity)
-* CLI-based interaction
-* Flask-based web application
-* Export results in JSON and CSV formats
-* Modular and scalable architecture
-
----
-
- 🛠️ Technologies Used
-
-* Python 3.6+ – Core programming language
-* Flask & Flask-CORS – Backend API and web interface
-* NLTK – Tokenization and NLP support
-* NumPy – Data processing
-* JSON / CSV – Data storage and export
+| Technology  | Purpose                               |
+| ----------- | ------------------------------------- |
+| Python 3.6+ | Core programming language             |
+| Flask       | Web framework for backend services    |
+| Flask-CORS  | Cross-Origin Resource Sharing support |
+| NLTK        | Tokenization and NLP processing       |
+| NumPy       | Data handling and processing          |
+| JSON / CSV  | Data export and storage formats       |
 
 ---
 
-🌐 Supported Languages
+## Supported Languages
+
+The application currently supports the following Indian languages:
 
 * Hindi (हिन्दी)
 * Tamil (தமிழ்)
@@ -47,16 +45,16 @@ The system supports both:
 
 ---
 
-⚙️ Installation Guide
+## Installation Guide
 
-1. Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone <your-repository-link>
 cd indian-language-word-frequency-analyzer
 ```
 
-2. Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -64,109 +62,129 @@ pip install -r requirements.txt
 
 ---
 
-▶️ How to Run
+## Running the Application
 
-Option 1: Command Line Interface (CLI)
+### Option 1: Command Line Interface (CLI)
+
+Run the CLI application using:
 
 ```bash
 python main.py
 ```
 
-You can:
+The CLI allows users to:
 
 * Enter text manually
-* Upload a text file
-* Select language
+* Upload text files
+* Select the target language
 * View analysis results
-* Export results
+* Export processed data
 
 ---
 
-Option 2: Web Application (Flask)
+### Option 2: Flask Web Application
+
+Run the Flask application using:
 
 ```bash
 python app.py
 ```
 
-Open in browser:
+Access the application in a web browser at:
 
-```
+```text
 http://127.0.0.1:5000
 ```
 
 ---
 
-📊 Output
+## Output
 
-The system provides:
+The system generates the following outputs:
 
-* Word frequency count
-* Percentage distribution
-* Sorted word ranking
+* Word frequency counts
+* Percentage-based frequency distribution
+* Ranked word lists based on occurrence frequency
 
-Export files:
+Supported export formats include:
 
-* output.json
-* output.csv
+* `output.json`
+* `output.csv`
 
 ---
 
-📁 Project Structure
+## Project Structure
 
-```
+```text
 project-root/
 
-├── main.py              # CLI application
-├── app.py               # Flask backend
-├── requirements.txt     # Dependencies
+├── main.py
+├── app.py
+├── requirements.txt
 
-├── src/                 # Core processing logic
+├── src/
 │   ├── tokenizer.py
 │   ├── frequency.py
 │   ├── preprocessing.py
 
-├── config/              # Language configurations
-├── utils/               # Helper functions
-├── tests/               # Unit testing
+├── config/
+├── utils/
+├── tests/
 ```
 
----
+### Directory Description
 
-🧠 Methodology (Short)
-
-1. Input text (manual/file)
-2. Text preprocessing (cleaning, normalization)
-3. Tokenization
-4. Stopword removal
-5. Frequency calculation
-6. Statistical analysis
-7. Output display and export
-
----
-
-⚠️ Limitations
-
-* No semantic understanding of text
-* Limited stopword coverage per language
-* No advanced NLP features like stemming or POS tagging
+| Directory/File | Description                        |
+| -------------- | ---------------------------------- |
+| `main.py`      | Command Line Interface application |
+| `app.py`       | Flask-based web backend            |
+| `src/`         | Core text processing modules       |
+| `config/`      | Language-specific configurations   |
+| `utils/`       | Utility and helper functions       |
+| `tests/`       | Unit testing modules               |
 
 ---
 
-🔮 Future Improvements
+## Methodology
 
-* Add stemming and lemmatization
-* Improve multilingual support
-* Add data visualization (graphs, word clouds)
-* Integrate machine learning models
-* Deploy as a full web application
+The system follows the workflow below:
+
+1. Input text acquisition through manual entry or file upload
+2. Text preprocessing and normalization
+3. Tokenization of textual content
+4. Stopword identification and removal
+5. Word frequency computation
+6. Statistical analysis generation
+7. Output presentation and export
 
 ---
 
-📄 License
+## Limitations
+
+* The system does not perform semantic analysis of text
+* Stopword coverage is limited for certain languages
+* Advanced NLP functionalities such as stemming, lemmatization, and part-of-speech tagging are not currently implemented
+
+---
+
+## Future Enhancements
+
+Potential future improvements include:
+
+* Integration of stemming and lemmatization techniques
+* Expansion of multilingual support
+* Addition of graphical visualizations and word clouds
+* Integration of machine learning-based text analysis models
+* Deployment as a fully hosted web application
+
+---
+
+## License
+
 MIT License
 
 Copyright (c) 2026 Patel Prit
 
-Free to use, modify, and distribute this software with proper credit to the author.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files to use, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, subject to proper attribution to the original author.
 
-This software is provided "as is", without warranty of any kind.
+The software is provided "as is", without warranty of any kind, express or implied.
